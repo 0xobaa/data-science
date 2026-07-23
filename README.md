@@ -1,110 +1,39 @@
-# 📊 Data Analytics Portfolio
+# Data Science Portfolio
 
-A collection of end-to-end data analytics projects spanning **SQL**, **Python**, **Power BI**, and **data storytelling**. Each project demonstrates real-world problem-solving using structured datasets and business-relevant questions.
+Applied data science projects across healthcare, public health, and retail, most of them grounded in Nigerian data. The work runs the full stack: database design and SQL, exploratory analysis and statistical testing in Python, machine learning, and business-facing dashboards in Power BI and Excel.
 
----
+A lot of it leans toward health and antimicrobial resistance, which is where my background as a medical laboratory scientist meets the data work.
 
-## Projects Overview
+## Projects
 
-### 1. E-Commerce Sales Database (SQL)
-**File:** `E commerce Sales Database`
+Each folder is self-contained with its own README, notebook or dashboard file, and findings.
 
-A fully structured relational database built in MySQL to simulate a small Nigerian e-commerce business.
-
-**What it covers:**
-- Database design with three normalized tables: `customers`, `products`, and `orders`
-- Data insertion for 10 customers, 10 products, and 20 orders
-- Business queries including:
-  - All orders with customer and product details (JOINs)
-  - Lagos customers who joined in 2024
-  - Total revenue per product
-  - Top 3 highest-spending customers
-  - Products ordered more than twice (HAVING clause)
-  - Customer status classification using CASE statements
-  - Products never purchased and customers with no orders (LEFT JOINs)
-
-**Tech Stack:** MySQL
-
----
-
-### 2.  Nigerian House Price Analysis (Python)
-**File:** `Nigeria House Prices Analysis.ipynb`
-
-An exploratory data analysis of Nigerian real estate data to uncover pricing patterns, affordability metrics, and market segmentation.
-
-**Key Findings:**
-- **Ikoyi** is the most expensive town in Lagos, with an average property price of approximately ₦2.27 billion
-- Parking spaces don't follow a linear price pattern — 8-space properties are extreme outliers (₦2.7B+)
-- Property title type significantly influences median market value
-- Price per bedroom is a more reliable affordability metric than average price alone
-
-**Tech Stack:** Python (Pandas, Matplotlib/Seaborn), Jupyter Notebook
-
----
-
-### 3. 📱 Customer Retention Report (Power BI)
-**File:** `Customer Retention Report`
-
-An interactive Power BI dashboard analyzing customer churn for a telecom provider across 7,043 customers.
-
-**Key Metrics:**
-| Metric | Value |
-|---|---|
-| Total Customers | 7,043 |
-| Churned Customers | 1,869 |
-| Churn Rate | 26.5% |
-| Total Revenue | ₦16.06M |
-| Revenue Lost to Churn | ₦4.26M |
-
-**Key Insights:**
-- Month-to-month contract holders churn at **51.4%** — the highest risk segment
-- Fiber optic users are **2.89x** more likely to churn than other internet service users
-- Electronic check payment method correlates with **2.65x** higher churn likelihood
-- Churn is highest in the first 12 months (47.4%), dropping to just 6.6% after 60 months
-
-**Recommendations:** Promote long-term contracts via loyalty incentives, investigate Fiber Optic service satisfaction, and improve onboarding for new customers in months 1–6.
-
-**Tech Stack:** Power BI Desktop (DAX, Key Influencers visual, CLTV analysis)
-
----
-
-### 4. 🏪 Superstore Analytics Dashboard (Power BI)
-**File:** `Superstore Analytics Dashboard.pdf`
-
-A performance dashboard for a US retail superstore tracking sales, profit, and returns across product categories and states.
-
-**Key Metrics:**
-| Metric | Current | vs. Previous Year |
+| Project | What it covers | Stack |
 |---|---|---|
-| Sales | $1.17M | +40.07% |
-| Profit | $136.37K | +51.35% |
-| Return Rate | 11.26% | -5.77% |
+| [antibiotic-resistance-database](antibiotic-resistance-database) | AMR surveillance on 2,199 patient records: database design plus SQL and Python analysis of resistance rates, genes, and outcomes | Python, pandas, SQLAlchemy, SQLite |
+| [infection-trends-eda](infection-trends-eda) | Two years of monthly infection data across five Nigerian states, with correlation and hypothesis testing | Python, pandas, SciPy, Seaborn |
+| [nigeria-house-prices](nigeria-house-prices) | EDA on Nigerian real estate: pricing patterns, affordability metrics, and market segmentation, with a Power BI report | Python, Power BI |
+| [supermarket-sales-analysis](supermarket-sales-analysis) | Sales analysis on a Nigerian supermarket dataset: revenue by city, category, and month | Python, pandas, Seaborn |
+| [superstore-sales-dashboard](superstore-sales-dashboard) | US retail performance dashboard tracking sales, profit, and returns year over year | Power BI |
+| [healthcare-excel-dashboard](healthcare-excel-dashboard) | Interactive Excel dashboard on simulated clinical data: patient visits, malaria positivity, anemia, hemoglobin | Excel, pivot tables, slicers |
+| [ecommerce-sales-sql](ecommerce-sales-sql) | Relational database for a small Nigerian e-commerce business, with business queries built from scratch | MySQL |
 
-**Highlights:**
-- Technology (Copiers, Phones, Accessories) drives the highest profits
-- Furniture (especially Tables) shows **negative profit margins**
-- Return rate improved significantly year-over-year
-- Sales trend shows consistent growth from 2020 to 2023
+## Related repositories
 
-**Tech Stack:** Power BI Desktop
+Two pieces graduated out of this portfolio into their own repos:
 
----
+- [amr-predictor](https://github.com/0xobaa/amr-predictor) — machine learning for carbapenem-resistance prediction and quarterly resistance forecasting
+- [healthscope](https://github.com/0xobaa/healthscope) — the AMR surveillance dashboard those models are built to support
 
-## 🛠️ Tools & Technologies
+## Tools
 
-| Tool | Usage |
-|---|---|
-| MySQL | Relational database design & querying |
-| Python | Data cleaning, EDA, visualization |
-| Power BI | Interactive dashboards & business reporting |
-| Jupyter Notebook | Python-based data analysis |
-
----
+SQL (MySQL, SQLite), Python (pandas, NumPy, SciPy, scikit-learn, Matplotlib, Seaborn), Power BI, Excel, Jupyter.
 
 ## About
 
-These projects were completed  with a focus on practical, business-driven questions and clean, interpretable outputs. Each project reflects the full analytics workflow — from raw data to actionable insight.
+These projects start from a real question and end at something someone could act on. Where the data is synthetic or simulated, the README says so. Findings are written to be read by a person, not padded to look thorough.
 
----
+## Author
 
->  *Feel free to explore each project folder, and reach out with any questions or feedback!*
+Abimbola Nurudeen Oba — Medical Laboratory Scientist and Data Scientist, Abuja, Nigeria.
+hello@abimbolaoba.com · GitHub [@0xobaa](https://github.com/0xobaa)
